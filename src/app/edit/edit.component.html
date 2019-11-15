@@ -1,0 +1,22 @@
+<form #form="ngForm" (ngSubmit)="submitProfile()">
+  <h2></h2>
+  <label for="name"></label>
+  <input [(ngModel)]="profile.name" id="name" name="name" type="text" />
+  <label for="contact"></label>
+  <input
+    [(ngModel)]="profile.contact"
+    id="contact"
+    name="contact"
+    type="text"
+  />
+  <label for="bio"></label>
+  <textarea
+    [(ngModel)]="profile.bio"
+    id="bio"
+    name="bio"
+    id=""
+    cols="30"
+    rows="10"
+  ></textarea>
+  <button></button>
+</form>
